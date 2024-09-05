@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Irrigation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Smart Irrigation System</h1>
+
+    <form id="irrigation-form">
+        <label for="moisture">Soil Moisture Level (%):</label>
+        <input type="number" id="moisture" name="moisture" required><br><br>
+
+        <label for="crop">Type of Crop:</label>
+        <select id="crop" name="crop" required>
+            <option value="wheat">Wheat</option>
+            <option value="rice">Rice</option>
+            <option value="corn">Corn</option>
+            <option value="tomato">Tomato</option>
+            <option value="potato">Potato</option>
+        </select><br><br>
+
+        <label for="weather">Weather Condition:</label>
+        <select id="weather" name="weather" required>
+            <option value="sunny">Sunny</option>
+            <option value="cloudy">Cloudy</option>
+            <option value="rainy">Rainy</option>
+        </select><br><br>
+
+        <button type="submit">Check Irrigation Need</button>
+    </form>
+
+    <div id="output">
+        <p id="irrigation-need"></p>
+        <p id="water-amount"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
